@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(48, 34, 53);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    color: rgb(175, 181, 187);
+    margin-bottom: 15%;
+    text-align: center;
+}
+
+.keys{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.key{
+    width: 80px;
+    height: 80px;
+    border: 2px solid rgb(133, 122, 113);
+    border-radius: 50%;
+    color: seashell;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.key.active{
+    border: 2px solid #ff0;
+    color: #ff0;
+    transform: scale(1.01);
+
+}
+
+.composer{
+    width: 100%;
+    margin-top: 15%;
+}
+
+.composer #input{
+    width: 100%;
+    font-size: 17px;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.composer button{
+    width: 100%;
+    height: 30px;
+    border:2px solid #fff;
+    font-size: 17px;
+    margin-top: 10px;    
+    cursor: pointer;
+    border-radius: 10px;
+    
+}
+
+.composer button:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+
+footer{
+    margin-top: 20px;
+    color:rgb(133, 122, 113);
+    font-size: 15px;
+    text-align: center;
+}
